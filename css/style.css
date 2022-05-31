@@ -55,6 +55,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+.header-list .current {
+    color: var(--accent-text-color);
+}
+
 .hover{
     color: var(--main-text-color);
     }
@@ -63,18 +67,9 @@ body {
     color: var(--secondary-text-color);
 }
 
-.hover:hover {
-    color: var(--accent-text-color);
-}
-
-.hover-contacts:hover {
-    color: var(--accent-text-color);
-}
-
-.hover:focus {
-    color: var(--accent-text-color);
-}
-
+.hover:hover,
+.hover-contacts:hover,
+.hover:focus,
 .hover-contacts:focus {
     color: var(--accent-text-color);
 }
@@ -194,6 +189,17 @@ body {
 
 /* .footer {} */
 
+.footer-logo-second {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: #2F303A;
+}
+
 /* .footer-item {} */
 
 .footer-address {
@@ -225,6 +231,14 @@ body {
     background-color: #2F303A;
 }
 
+.footer-contacts-address:focus,
+.footer-contacts:focus,
+.footer-contacts-address:hover,
+.footer-contacts:hover {
+    color: var(--accent-text-color);
+}
+
+
 /*-- страница 2 ПОРТФОЛИО --*/
 
 :root {
@@ -232,6 +246,19 @@ body {
 }
 
 /*-- секция 1 ряд кнопок --*/
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 /* .buttons-line {} */
 
@@ -282,7 +309,6 @@ body {
     color: var(--title-text-color);
     background-color: var(--accent-text-color);
 }
-
 
 /*По умолчанию, вес шрифта абзацев,
 который установлен в таблице стилей браузера,
