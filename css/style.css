@@ -245,7 +245,9 @@ body {
     --buttons-background-color: #F5F4FA;
 }
 
-/*-- секция 1 ряд кнопок --*/
+/*-- секция кнопок и работ --*/
+
+/* .buttons-work {} */
 
 .visually-hidden {
     position: absolute;
@@ -260,11 +262,11 @@ body {
     margin: -1px;
 }
 
-/* .buttons-line {} */
+/*-- часть 1 ряд кнопок --*/
 
-/* .buttons-line-list {} */
+/* .buttons-list {} */
 
-.buttons-line-item {
+.buttons-item {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -273,11 +275,16 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--buttons-background-color);
+    cursor: pointer;
 }
 
-/*-- секция 2 работы --*/
+.buttons-item:hover,
+.buttons-item:focus {
+    color: var(--title-text-color);
+    background-color: var(--accent-text-color);
+}
 
-/* .work {} */
+/*-- часть 2 работы --*/
 
 /* .work-list {} */
 
@@ -294,20 +301,6 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-}
-
-.buttons-line-item {
-    cursor: pointer;
-}
-
-.buttons-line-item:hover {
-    color: var(--title-text-color);
-    background-color: var(--accent-text-color);
-}
-
-.buttons-line-item:focus {
-    color: var(--title-text-color);
-    background-color: var(--accent-text-color);
 }
 
 /*По умолчанию, вес шрифта абзацев,
